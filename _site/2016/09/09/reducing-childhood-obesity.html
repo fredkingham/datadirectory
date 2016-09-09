@@ -58,200 +58,67 @@
 </div>
 
 <div class="outer-main-container">
-  <div data-bind="ifnot: submitted" class="main-container">
-    <h2>Open Health Data Usage</h2>
-    <form data-bind="submit: postForm">
+  <div class="main-container">
+    <div class="post-header">
+      <h2>
+        Reducing Childhood Obesity
+      </h2>
+      <h5>
+          <em>by</em> Data Flock
+      </h5>
+    </div>
+    <div class="tags-header">
       <div class="grid">
-        <div class="long-form">
-          <label for="projectName">
-            <div class="required">What is the name of your project?</div>
-            <input data-bind="value: form.name, css: {error: invalid.name}" type="text">
-          </label>
+        <div data-bind="foreach: tags" class="grid__item three-quarters palm--one-half">
+        <a class="tag" data-bind="attr: {href: url}, text: name"></a>
+      </div><div class="grid__item one-quarter palm--one-half align-right">
+          <a href="http://insights.dataflock.co.uk/138_wards_reducing_childhood_obesity/" class="btn btn-primary" target="_blank">FIND OUT MORE</a>
         </div>
-        <div class="long-form">
-          <label>
-            Does your project have a website?
-            <small class="help-text">
-              We'd like to be able to link people to your project later on - if it's online please provide the url
-            </small>
-            <input data-bind="value: form.website"  type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            <div class="required">How did you use open health data?</div>
-            <small class="help-text">
-              We're looking to understand what your project does, what it's for, and how you used open health data
-            </small>
-            <textarea data-bind="value: form.how, css: {error: invalid.how}"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            <div class="required">What was the impact of your project?</div>
-            <small class="help-text">
-              We're trying to understand what happens next after people create their projects.
-            </small>
-            <textarea data-bind="value: form.impact, css: {error: invalid.impact}"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>What datasets did you use in your project? (Please include links if possible)
-            <small class="help-text">
-              We're trying to find out what currently available datasets people are finding most useful, and also map the space of open health data usage
-            </small>
-            <textarea data-bind="value: form.datasets"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            Is there an image that represents your project?
-            <small class="help-text">
-              We'd like show images that represent projects if we're linking to them.
-            </small>
-            <input data-bind="value: form.image" placeholder="If you have a logo or screenshot of your project online, please provide a link here" type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>What is the name of your organisation?
-            <small class="help-text">If your project wasn't related to an organisation, that's ok too</small>
-            <input data-bind="value: form.organisation" type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            What does your organisation do?
-            <textarea data-bind="value: form.organisationPurpose"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            If your organisation is a company, what is your company number?
-            <small class="help-text">This lets us understand what kind of companies are using open health data</small>
-            <input data-bind="value: form.companyNumber" type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            <div class="required">What is your email address?</div>
-            <small class="help-text">Just in case we want to get in touch to find out more.</small>
-            <input data-bind="value: form.email, css: {error: invalid.email}" type="text">
-        </div>
-        <div class="long-form">
-          <label>
-            Do you mind us publishing your contact details so people can get in touch with you about your project?
-            <input data-bind="checked: form.contactable" type="checkbox">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            Any other comments / feedback for us?
-            <small class="help-text">Have we forgotten anything? Was anything on this form confusing? Just want to say hello?</small>
-            <textarea data-bind="value: form.otherComments"></textarea>
-          </label>
-        </div>
-        <div data-bind="if: errored" class="grid error">
-          <div class="long-form text-centre error">
-            Please fill in the required fields
-          </div>
-        </div>
-      <div class="long-form text-centre">
-        <button class="btn btn-primary btn-lg" type="submit">Add</button>
       </div>
     </div>
-  </form>
-  </div>
-  <div data-bind="if: submitted" class="main-container">
-    <h2>Thank You!</h2>
-    <h4 class="text-centre">
-      We appreciate your input, we'll take a look and hopfully get in touch
-      with you soon
-    </h4>
-    <div class="grid text-centre">
-        <a href="/datadirectory" class="btn btn-primary btn-lg success-btn">Back to the data directory</a>
+    <div class="main-body">
+      <div class="grid">
+        <div class="grid__item two-thirds palm--one-whole">
+          <h4>Introduction</h4>
+          <p>We looked at data relating to Childhood Obesity, taking data from a range of sources to find trends in the data, with a final focus on Bradford. Looking at the national picture we found that only 138 wards out of 7,618 wards in England had reduced the levels of childhood obesity from when children start primary school to when they finish, aged 10/11.
+Looking at 2008/09 data when children start in reception class (aged 5) the average rate of obesity across the country is 9.323%. When the same children finish primary school in 2013/14 (aged 10/11), their average rate of obesity has risen to 17.969%. In Ilkeston central council ward, in Erewash Borough Council childhood obesity rose from 5% to 32.6% within 6 years. We found that this wasn’t an anomaly as there were 68 other wards whose childhood obesity rates have increased by more than 400%.</p>
+
+          
+            <h4>Impact</h4>
+            <p>We have increased awareness around the issues of Childhood Obesity in a hyper-local setting, enabling local CCG’s and Councils to understand the topic in more detail</p>
+
+          
+          
+          <h4>Datasets Used</h4>
+          <ul>
+  <li><a href="https://www.noo.org.uk/data_sources/child/national_child_measurement_programme">Childhood obesity data</a></li>
+  <li><a href="http://digital.nhs.uk/qof-online">Adult obesity data</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/department-for-education">GCSE results data</a></li>
+  <li><a href="https://www.ons.gov.uk">LSOA, Ward, and population estimates</a></li>
+  <li><a href="http://ratings.food.gov.uk">Takeaway restaurants</a></li>
+</ul>
+
+          
+        </div><div class="grid__item one-third palm--one-whole page-side-bar">
+          <img src="http://insights.dataflock.co.uk/wp-content/uploads/sites/2/2016/09/Childhood_Obesity.jpeg">
+          <h5>More about Data Flock</h5>
+          Data Flock provide expert data insight for organisations and companies who want to use information to further their goals.
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <script>
-  (function(){
-      var AppViewModel = function(){
-        var requiredFields = ["name", "how", "impact", "email"];
-        var self = this;
-        this.form = {contactable: false};
-        this.invalid = {};
-        this.errored = ko.observable(false);
-        this.submitted = ko.observable(false);
+  var tagNames = ["obesity"]
+  var urls = _.map(tagNames, function(tag){ return "/datadirectory/?tag=" + encodeURIComponent(tag)});
+  var tags = [];
 
-        _.each(requiredFields, function(requiredField){
-          self.form[requiredField] = ko.observable("");
-          self.invalid[requiredField] = ko.observable(false);
-          self.form[requiredField].subscribe(function(newValue){
-              self.validateField(requiredField);
-          });
-        });
-
-        this.validateField = function(requiredField){
-          if(!self.form[requiredField]().length){
-            self.invalid[requiredField](true)
-            return requiredField;
-          }
-          else{
-            self.invalid[requiredField](false)
-          }
-        }
-
-        this.isValid = function(){
-           return true;
-           var invalidFields = _.map(requiredFields, function(requiredField){
-              return self.validateField(requiredField);
-           });
-
-           var isValid = !_.compact(invalidFields).length;
-           self.errored(!isValid);
-           return isValid;
-        }
-
-        var camelCaseToSpace = function(someStr){
-            return someStr.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); })
-        }
-
-        this.postForm = function(){
-          if(self.isValid()){
-            // post
-            var postDict = {
-                z_name: ko.utils.unwrapObservable(self.form.name),
-                z_requester: ko.utils.unwrapObservable(self.form.email),
-                z_subject: "Data directory form",
-            };
-
-            other_values = _.filter(self.form, function(v, k){
-                if(k === "name" || k === "email"){
-                   return false;
-                }
-                return true;
-            })
-
-            postDict.z_description = _.map(self.form, function(v, k){
-              if(k !== "name" && k !== "email"){
-                return(camelCaseToSpace(k) + ": " + ko.utils.unwrapObservable(v));
-              }
-            }).join("\n");
-
-            $.post('/datadirectory/contact/index.php', postDict).then(
-              function(){
-                $("body").scrollTop(0);
-                self.submitted(true);
-              }
-            )
-            return false;
-          }
-
-          return false;
-        }
-      }
-      var mpv = new AppViewModel();
-      ko.applyBindings(mpv);
-  }());
+  _.each(tagNames, function(tagName, index){
+      tags.push({name: tagName, url: urls[index]});
+  });
+  var mpv = {tags: tags};
+  ko.applyBindings(mpv);
+  window.mpv = mpv;
 </script>
 
     <div class="footer">

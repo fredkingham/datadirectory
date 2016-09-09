@@ -58,200 +58,58 @@
 </div>
 
 <div class="outer-main-container">
-  <div data-bind="ifnot: submitted" class="main-container">
-    <h2>Open Health Data Usage</h2>
-    <form data-bind="submit: postForm">
+  <div class="main-container">
+    <div class="post-header">
+      <h2>
+        Student Data Labs
+      </h2>
+      <h5>
+          <em>by</em> Student Data Labs
+      </h5>
+    </div>
+    <div class="tags-header">
       <div class="grid">
-        <div class="long-form">
-          <label for="projectName">
-            <div class="required">What is the name of your project?</div>
-            <input data-bind="value: form.name, css: {error: invalid.name}" type="text">
-          </label>
+        <div data-bind="foreach: tags" class="grid__item three-quarters palm--one-half">
+        <a class="tag" data-bind="attr: {href: url}, text: name"></a>
+      </div><div class="grid__item one-quarter palm--one-half align-right">
+          <a href="http://studentdatalabs.com/" class="btn btn-primary" target="_blank">FIND OUT MORE</a>
         </div>
-        <div class="long-form">
-          <label>
-            Does your project have a website?
-            <small class="help-text">
-              We'd like to be able to link people to your project later on - if it's online please provide the url
-            </small>
-            <input data-bind="value: form.website"  type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            <div class="required">How did you use open health data?</div>
-            <small class="help-text">
-              We're looking to understand what your project does, what it's for, and how you used open health data
-            </small>
-            <textarea data-bind="value: form.how, css: {error: invalid.how}"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            <div class="required">What was the impact of your project?</div>
-            <small class="help-text">
-              We're trying to understand what happens next after people create their projects.
-            </small>
-            <textarea data-bind="value: form.impact, css: {error: invalid.impact}"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>What datasets did you use in your project? (Please include links if possible)
-            <small class="help-text">
-              We're trying to find out what currently available datasets people are finding most useful, and also map the space of open health data usage
-            </small>
-            <textarea data-bind="value: form.datasets"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            Is there an image that represents your project?
-            <small class="help-text">
-              We'd like show images that represent projects if we're linking to them.
-            </small>
-            <input data-bind="value: form.image" placeholder="If you have a logo or screenshot of your project online, please provide a link here" type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>What is the name of your organisation?
-            <small class="help-text">If your project wasn't related to an organisation, that's ok too</small>
-            <input data-bind="value: form.organisation" type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            What does your organisation do?
-            <textarea data-bind="value: form.organisationPurpose"></textarea>
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            If your organisation is a company, what is your company number?
-            <small class="help-text">This lets us understand what kind of companies are using open health data</small>
-            <input data-bind="value: form.companyNumber" type="text">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            <div class="required">What is your email address?</div>
-            <small class="help-text">Just in case we want to get in touch to find out more.</small>
-            <input data-bind="value: form.email, css: {error: invalid.email}" type="text">
-        </div>
-        <div class="long-form">
-          <label>
-            Do you mind us publishing your contact details so people can get in touch with you about your project?
-            <input data-bind="checked: form.contactable" type="checkbox">
-          </label>
-        </div>
-        <div class="long-form">
-          <label>
-            Any other comments / feedback for us?
-            <small class="help-text">Have we forgotten anything? Was anything on this form confusing? Just want to say hello?</small>
-            <textarea data-bind="value: form.otherComments"></textarea>
-          </label>
-        </div>
-        <div data-bind="if: errored" class="grid error">
-          <div class="long-form text-centre error">
-            Please fill in the required fields
-          </div>
-        </div>
-      <div class="long-form text-centre">
-        <button class="btn btn-primary btn-lg" type="submit">Add</button>
       </div>
     </div>
-  </form>
-  </div>
-  <div data-bind="if: submitted" class="main-container">
-    <h2>Thank You!</h2>
-    <h4 class="text-centre">
-      We appreciate your input, we'll take a look and hopfully get in touch
-      with you soon
-    </h4>
-    <div class="grid text-centre">
-        <a href="/datadirectory" class="btn btn-primary btn-lg success-btn">Back to the data directory</a>
+    <div class="main-body">
+      <div class="grid">
+        <div class="grid__item two-thirds palm--one-whole">
+          <h4>Introduction</h4>
+          <p>In February Student Data Labs ran a Health Innovation Lab as part of the Leeds Digital Festival at the Leeds Institute for Data Analytics. The aim here was to teach practical data science skills whilst tackling Type 2 Diabetes in Leeds. Open health data and Leeds-based organisations like the Health and Social Care Information Centre (HSCIC), who have one of the largest repositories of open data in Europe, were integral to the success of the Lab. We are very lucky to be based in a city that is at the forefront of the open health data revolution. All of our projects made use of data that is open and freely available for anyone to download. For some university students, the Health Innovation Lab was the first time they had made use of open data. This provided us with the opportunity to demonstrate the huge potential of open health data for building innovative tools and discovering valuable insights that can potentially save lives.</p>
+
+          
+            <h4>Impact</h4>
+            <p>Through the Health Innovation, university students were given the opportunity to learn real world data skills and do some good along the way. The practical nature of the Labs enabled university students from all backgrounds to get involved with civic data projects. Some of these data projects went on to become more long-term. For example, one of our practical exercises involved using open prescription data to forecast demand for Diabetes medication across the city. Another mapped the prevalence of Diabetes at CCG level in England.
+The Health Innovation Lab saw Student Data Labs collaborate with a variety of amazing organisations in the region from digital innovation agencies like mHealth Habitat to Leeds Data Mill, the HSCIC and Leeds Beckett. Our ultimate aim is to create social impact with the data projects and we’re working with dynamic and innovative organisations to try and make this happen.</p>
+
+          
+          
+        </div><div class="grid__item one-third palm--one-whole page-side-bar">
+          <img src="https://studentdatalabs.files.wordpress.com/2016/01/newlogo4.png?w=138&h=138">
+          <h5>More about Student Data Labs</h5>
+          Based in Leeds and established in November 2015, Student Data Labs envisions a future where more university students can gain highly sought-after data skills that prepare them for entering the labour market upon graduation. The Labs run free data-driven Innovation Labs that offer a collaborative space for students from a variety of academic backgrounds to undertake real-world data projects - learning practical and highly employable skills whilst working on civic problems. Our Data Lab Volunteers are given the chance to learn about open source tools like R as well as the data science process from asking questions of open data through to exploration, modelling and data visualisation.
+We have held two successful events at the Leeds Institute for Data Analytics: a Health Innovation Lab and a Vision Zero Innovation Lab. The first focused on tackling Type 2 Diabetes and the second explored how to reduce the number of road fatalities to zero in Leeds. Student Data Labs is highly collaborative and interdisciplinary - we bring professionals and students from a diverse set of backgrounds together to tackle wicked problems in the city. 
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <script>
-  (function(){
-      var AppViewModel = function(){
-        var requiredFields = ["name", "how", "impact", "email"];
-        var self = this;
-        this.form = {contactable: false};
-        this.invalid = {};
-        this.errored = ko.observable(false);
-        this.submitted = ko.observable(false);
+  var tagNames = ["hscic","diabetes"]
+  var urls = _.map(tagNames, function(tag){ return "/datadirectory/?tag=" + encodeURIComponent(tag)});
+  var tags = [];
 
-        _.each(requiredFields, function(requiredField){
-          self.form[requiredField] = ko.observable("");
-          self.invalid[requiredField] = ko.observable(false);
-          self.form[requiredField].subscribe(function(newValue){
-              self.validateField(requiredField);
-          });
-        });
-
-        this.validateField = function(requiredField){
-          if(!self.form[requiredField]().length){
-            self.invalid[requiredField](true)
-            return requiredField;
-          }
-          else{
-            self.invalid[requiredField](false)
-          }
-        }
-
-        this.isValid = function(){
-           return true;
-           var invalidFields = _.map(requiredFields, function(requiredField){
-              return self.validateField(requiredField);
-           });
-
-           var isValid = !_.compact(invalidFields).length;
-           self.errored(!isValid);
-           return isValid;
-        }
-
-        var camelCaseToSpace = function(someStr){
-            return someStr.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); })
-        }
-
-        this.postForm = function(){
-          if(self.isValid()){
-            // post
-            var postDict = {
-                z_name: ko.utils.unwrapObservable(self.form.name),
-                z_requester: ko.utils.unwrapObservable(self.form.email),
-                z_subject: "Data directory form",
-            };
-
-            other_values = _.filter(self.form, function(v, k){
-                if(k === "name" || k === "email"){
-                   return false;
-                }
-                return true;
-            })
-
-            postDict.z_description = _.map(self.form, function(v, k){
-              if(k !== "name" && k !== "email"){
-                return(camelCaseToSpace(k) + ": " + ko.utils.unwrapObservable(v));
-              }
-            }).join("\n");
-
-            $.post('/datadirectory/contact/index.php', postDict).then(
-              function(){
-                $("body").scrollTop(0);
-                self.submitted(true);
-              }
-            )
-            return false;
-          }
-
-          return false;
-        }
-      }
-      var mpv = new AppViewModel();
-      ko.applyBindings(mpv);
-  }());
+  _.each(tagNames, function(tagName, index){
+      tags.push({name: tagName, url: urls[index]});
+  });
+  var mpv = {tags: tags};
+  ko.applyBindings(mpv);
+  window.mpv = mpv;
 </script>
 
     <div class="footer">

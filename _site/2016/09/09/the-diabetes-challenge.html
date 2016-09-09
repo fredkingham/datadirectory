@@ -61,10 +61,10 @@
   <div class="main-container">
     <div class="post-header">
       <h2>
-        Mapping English GP prescribing data
+        The Diabetes Challenge
       </h2>
       <h5>
-          <em>by</em> Dr Peter J Diggle
+          <em>by</em> Data Flock
       </h5>
     </div>
     <div class="tags-header">
@@ -72,7 +72,7 @@
         <div data-bind="foreach: tags" class="grid__item three-quarters palm--one-half">
         <a class="tag" data-bind="attr: {href: url}, text: name"></a>
       </div><div class="grid__item one-quarter palm--one-half align-right">
-          <a href="http://bmjopen.bmj.com/content/3/1/e001363.full" class="btn btn-primary" target="_blank">FIND OUT MORE</a>
+          <a href="http://insights.dataflock.co.uk/diabetes-challenge/" class="btn btn-primary" target="_blank">FIND OUT MORE</a>
         </div>
       </div>
     </div>
@@ -80,33 +80,38 @@
       <div class="grid">
         <div class="grid__item two-thirds palm--one-whole">
           <h4>Introduction</h4>
-          <p>Objective The aim of this paper was to show that easily interpretable maps of local and national prescribing data, available from open sources, can be used to demonstrate meaningful variations in prescribing performance.
-Design The prescription dispensing data from the National Health Service (NHS) Information Centre for the medications metformin hydrochloride and methylphenidate were compared with reported incidence data for the conditions, diabetes and attention deficit hyperactivity disorder,</p>
+          <p>Looking at Type 2 Diabetes, we focussed our attention on the initial drugs given to patients when the initial diet change is not effective. These drugs are Metformin, Sulfonylureas, and “other drugs” and can be found in the Prescribing Data from NHS Digital.
+Our focus was on Bradford CCG’s where we calculated that a potential £2.5m per year saving could be realised by prescribing excersize as an intervention before drugs. The excersize would take place at local council sports centres, generating £1m per year for the council in class fees. Our suggestion was to also include a practice nurse at the sports classes to not only help patients, but to also take regular readings from patients (fitbit, bloods, weight, etc) to feed back into the system.</p>
 
           
             <h4>Impact</h4>
-            <p>Results The spatial mapping demonstrates that several areas in England have substantially and significantly higher spending per person on metformin and methyphenidate. North Kent and the Wirral have substantially and significantly higher spending per child on methyphenidate.
-Conclusions It is possible, using open source data, to use statistical methods to distinguish chance fluctuations in prescribing from genuine differences in prescribing rates. The results can be interactively mapped at a fine spatial resolution down to individual GP practices in England. This process could be automated and reported in real time. This can inform decision-making and could enable earlier detection of emergent phenomena.</p>
+            <p>The insight was well received by Bradford CCG’s, and by the senior leadership team at Bradford Council and we are hoping to work closely to create a pilot project.</p>
 
           
           
           <h4>Datasets Used</h4>
           <ul>
-  <li><a href="http://www.hscic.gov.uk/gpprescribingdata">Prescribing data </a> is from the monthly files published by the HSCIC</li>
+  <li><a href="http://digital.nhs.uk/gpprescribingdata">Prescribing data</a></li>
+  <li>CCG shapefiles</li>
+  <li>Ward shapefiles</li>
+  <li>LSOA to Ward lookups</li>
+  <li>GP Practice locations</li>
+  <li>Sports centre locations</li>
+  <li>National diabetes audit</li>
 </ul>
 
           
         </div><div class="grid__item one-third palm--one-whole page-side-bar">
-          <img src="http://bmjopen.bmj.com/content/3/1/e001363/F7.medium.gif">
-          <h5>More about Dr Peter J Diggle</h5>
-          
+          <img src="http://www.dataflock.co.uk/wp-content/uploads/2016/09/Presentation.001-3.jpeg">
+          <h5>More about Data Flock</h5>
+          Data Flock provide expert data insight for organisations and companies who want to use information to further their goals.
         </div>
       </div>
     </div>
   </div>
 </div>
 <script>
-  var tagNames = ["prescribing"]
+  var tagNames = ["diabetes","prescribing"]
   var urls = _.map(tagNames, function(tag){ return "/datadirectory/?tag=" + encodeURIComponent(tag)});
   var tags = [];
 

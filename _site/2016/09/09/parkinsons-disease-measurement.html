@@ -61,10 +61,10 @@
   <div class="main-container">
     <div class="post-header">
       <h2>
-        Living a Long Life?
+        Parkinson's Disease Measurement
       </h2>
       <h5>
-          <em>by</em> Open Public Services Network
+          <em>by</em> John Turner
       </h5>
     </div>
     <div class="tags-header">
@@ -72,7 +72,7 @@
         <div data-bind="foreach: tags" class="grid__item three-quarters palm--one-half">
         <a class="tag" data-bind="attr: {href: url}, text: name"></a>
       </div><div class="grid__item one-quarter palm--one-half align-right">
-          <a href="https://www.thersa.org/action-and-research/rsa-projects/public-services-and-communities-folder/mental-health/long-life.html/" class="btn btn-primary" target="_blank">FIND OUT MORE</a>
+          <a href="http://www.parkinsonsmeasurement.org/Epidemiology/EnglandPrescription/prevalenceEngland1.htm#maps" class="btn btn-primary" target="_blank">FIND OUT MORE</a>
         </div>
       </div>
     </div>
@@ -80,33 +80,31 @@
       <div class="grid">
         <div class="grid__item two-thirds palm--one-whole">
           <h4>Introduction</h4>
-          <p>RSA OPSN collated publically available data and worked with academic colleagues at the University of Surrey to band CCGs based on the experiences of mental health service users in their area. RSA OPSN have banded them ‘low’, ‘as expected’ and ‘high’ based on our expected outcomes adjusted for population. While these bandings provide an important basis of understanding national trends and where particular attention is required, it is important to note whether ‘as expected’, ‘low’ or ‘high’, acros</p>
+          <p>This paper presents maps of the inferred relative prevalence of PD in England. The maps are based on data from publicly accessible data sets:
+* one that contains for each of the 10,000 GP practices in England the number of NHS prescriptions written for each drug in June 2012;
+* one that shows the post code of each practice;
+*one that shows the eastings and northings of each post code.
+The data does not explicitly mention PD, so we adopt a proxy measure. This is based on the observation that some drugs, such as levodopa, are associated with PD. The ratio between the number of “Parkinson’s” prescriptions written by a practice and the total number of prescriptions that it writes gives an indication of the prevalence of PD in that practice’s catchment areas. We go one stage further, we derive our proxy measure by dividing a practice’s ratio by the national average ratio. This gives the inferred relative prevalence for that practice. It is from these values that the maps are drawn.</p>
 
           
           
           <h4>Datasets Used</h4>
           <ul>
-  <li><a href="https://data.england.nhs.uk/group/qof">QOF</a> Quality and Outcomes Framework data.</li>
-  <li><a href="https://data.england.nhs.uk/group/iapt">IaPT</a></li>
-  <li><a href="http://www.nhsbsa.nhs.uk/PrescriptionServices/3516.aspx">BSA prescribing data</a></li>
-  <li>NCHOD</li>
-  <li><a href="https://data.england.nhs.uk/dataset?q=MHMDS&amp;sort=score+desc%2C+metadata_modified+desc">MHMDS</a></li>
-  <li>PHE mortality data</li>
-  <li><a href="https://data.england.nhs.uk/group/ascof">Adult Social Care Outcome Framework</a></li>
+  <li><a href="http://www.hscic.gov.uk/gpprescribingdata">Prescribing data </a> is from the monthly files published by the HSCIC</li>
 </ul>
 
           
         </div><div class="grid__item one-third palm--one-whole page-side-bar">
-          <img src="https://www.thersa.org/globalassets/pdfs/opsn/mental-health-maps/maps_psych-therapies-w-logo-700.jpg">
-          <h5>More about Open Public Services Network</h5>
-          Re-uses and re-analyses open data to hold public services to account and make it better understood by the public
+          <img src="http://www.parkinsonsmeasurement.org/Epidemiology/EnglandPrescription/prevalenceEngland1_00_50_50_75_100_H500.gif">
+          <h5>More about John Turner</h5>
+          
         </div>
       </div>
     </div>
   </div>
 </div>
 <script>
-  var tagNames = ["mental health"]
+  var tagNames = ["parkinsons","mapping","prescribing"]
   var urls = _.map(tagNames, function(tag){ return "/datadirectory/?tag=" + encodeURIComponent(tag)});
   var tags = [];
 
